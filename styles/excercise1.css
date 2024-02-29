@@ -1,0 +1,17 @@
+.container{
+    margin: auto;
+    width:90%;
+    text-align: center;
+}
+
+.user_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.user_form input{
+    width:200px;
+}
