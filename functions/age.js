@@ -10,6 +10,7 @@ submit.onclick = function (ageNum) {
     }
     else if (isNaN(ageNum)) {
         message.innerText = "Must be a number";
+        message.style.color = 'red';
     }
     else if (ageNum >= 3 && ageNum <= 12) {
         message.innerText = "Age Group : Child";
@@ -21,13 +22,13 @@ submit.onclick = function (ageNum) {
         message.innerText = "Age Group : Young Adult";
     }
     else if (ageNum >= 36 && ageNum <= 59) {
-        message.innerText = "Age Group : Middle Aged Adults";
+        message.innerText = "Age Group : Middle Aged Adult";
     }
     else if (ageNum >= 60 && ageNum <= 99) {
-        message.innerText = "Age Group : Old Adults";
+        message.innerText = "Age Group : Old Adult";
     }
     else if (ageNum >= 100 && ageNum <= 120) {
-        message.innerText = "Age Group : Legendary Old Adults";
+        message.innerText = "Age Group : Legendary Old Adul";
     }
     else if (ageNum > 120) {
         message.innerText = "You must be out of space, visit your nearest government registry";
