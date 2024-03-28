@@ -28,7 +28,7 @@ submit.onclick = function (ageNum) {
         message.innerText = "Age Group : Old Adult";
     }
     else if (ageNum >= 100 && ageNum <= 120) {
-        message.innerText = "Age Group : Legendary Old Adul";
+        message.innerText = "Age Group : Legendary Old Adult";
     }
     else if (ageNum > 120) {
         message.innerText = "You must be out of space, visit your nearest government registry";
