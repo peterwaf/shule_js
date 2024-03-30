@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Fundamentals Excercise</title>
+   
+</head>
+
+<body>
+    <div style="width:1000px;margin: auto;">
+        <h1>Js Fundamentals </h1>
+
+        <p>1.What is the output of the following code in
+            the console when the operands are
+            added using arithmetic operator?</p>
+        <pre>
+    <code>
+        let x = 5;
+        let y = 10;
+        let z = 15;
+        const sum = x + y + z;
+        console.log(sum); // logs 30
+    </code>
+</pre>
+        <p>2.Create a variable called carName, assign the value Volvo to it.</p>
+        <pre>
+    <code>
+    let carName = "Volvo";
+</code>
+</pre>
+
+        <p>3.Create a variable called z, assign x + y to it, and display the result in an
+            console Tab.</p>
+        <pre>
+    <code>
+    let x = 5;
+    let y = 10;
+    let z = x + y;
+    console.log(z) // logs 10
+</code>
+</pre>
+        <p>4. Multiply 10 with 5, and console the result</p>
+        <pre>
+    <code>
+    let a = 10;
+    let b = 5;
+    let result = a * b;
+    console.log(result);
+</code>
+</pre>
+
+        <p>5. Alert the remainder when 15 is divided by 9.</p>
+        <pre>
+    <code>
+    console.log(15 % 9) // logs 6
+    </code>
+    </pre>
+        <p>6.Create a function called "myFunction" and give a block of code so that when it
+            is called it executes an alert with the value assigned in your code.</p>
+        <pre>
+        <code>
+        const myFunction = (val) => {
+            alert(val);
+        }
+        myFunction("Peter");//alerts the string "Peter";
+    </code>
+</pre>
+        <p>
+            7.Make a function that returns "Hello" and display the value in the console tab.
+        </p>
+        <pre>
+    <code>
+        const sayHello = () => {
+            return "Hello";
+        }
+        console.log(sayHello())
+    </code>
+</pre>
+
+        <p>8. Show your result in the console of the browser.</p>
+        <ul style="list-style-type: lower-alpha;">
+            <li>Create an array of fruits and:</li>
+            &nbsp;
+            <ul style="list-style-type: lower-roman;">
+                <li>Use the correct array method to remove the last item in the array.</li>
+                <pre>
+                <code>
+                    let fruits = ["Apple","Mangoes","Berries"];
+                    fruits.pop()// removes the last item
+                    console.log(fruits) // logs ["Apple","Mangoes"]
+                </code>
+            </pre>
+                <li>
+                    Use the correct Array method to add a fruit at the begining of the fruits
+                    array
+                </li>
+                <pre>
+                <code>
+                    fruits.unshift("Pineapples");
+                    console.log(fruits); //logs ['Pineapples', 'Apple', 'Mangoes']
+                </code>
+            </pre>
+            </ul>
+        </ul>
+        <p>9.Display your outputs in the console:</p>
+        <ul style="list-style-type: lower-alpha;">
+            <li>Create a loop that runs from 0 to 9 using the for loop.</li>
+            <pre>
+        <code>
+            for (let i = 0;i<=9;i++){
+                console.log(i);
+            }
+        </code>
+    </pre>
+
+            <li>
+                Create a loop that runs through each item in the below array:
+                <br />
+                //const fruits = ["Apple", "Banana", "Orange"];
+            </li>
+            <pre>
+        <code>
+            const fruits = ["Apple", "Banana", "Orange"];
+            for(i=0;i < fruits.length; i++){
+             console.log(fruits[i])
+            }
+        </code>
+    </pre>
+        </ul>
+
+        <p>10.Console the result/output</p>
+        <ul style="list-style-type: lower-alpha;">
+            <li>Check the type of the variable [1, 2, 3].</li>
+            <pre>
+        <code>
+            console.log(typeof([1, 2, 3]));
+        </code>
+    </pre>
+        </ul>
+    </div>
+    <script src="./fun.js"></script>
+</body>
+
+</html>
