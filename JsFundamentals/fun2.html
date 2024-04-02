@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun2</title>
+</head>
+
+<body>
+    <a href="/index.html">Home</a>
+    <div style="width:1000px;margin: auto;">
+    <pre>
+        <code>
+
+/**1.Define a function called addition that takes two
+parameters a and b and returns their sum.**/
+
+const addition = (a,b) => {return a + b;}
+console.log(addition (1,2));
+
+/**2.Create a function named greet 
+that takes a parameter name and returns
+a greeting message including the name**/
+
+const greet = (nameString) => {
+    return `Hello ${nameString}`;
+}
+
+// console.log(greet("John"))
+
+/**3.Write a function called isEven that takes a number as a parameter
+ * and returns true if the number is
+ * even, otherwise false.**/
+
+const isEven = (num) => {
+    if (num%2 === 0) {
+        return true;
+    }
+    return false;
+}
+
+// console.log(isEven(9))
+
+/**4.Develop a function named calculateArea
+ * that calculates the area of a rectangle given
+ * its width and height as parameters, and returns
+ * the result.**/
+
+const calculateArea = (width,height) => {
+    return width * height; //A = length * width
+}
+
+console.log(calculateArea(2,3))
+
+/**5.Define a function called power that takes
+ * two parameters base and exponent,
+ *  and returns the result of
+ * raising base to the power of exponent.**/
+
+const power = (base,exponent)=>{
+    return base ** exponent;
+}
+
+console.log(power(2,3))
+
+/**6.Create a function named reverseString that
+ * takes a string as a parameter and
+ * returns the reverse of that string.**/
+
+const reverseString = (string)=>{
+    let stringLetters = string.split("");
+    let reversedString = [];
+    for (let i = string.length -1; i >= 0; i--) {
+        reversedString.push(string[i]);
+    }
+    return reversedString.join("");
+}
+
+console.log(reverseString("Mercedez"));
+
+
+/***7.Write a function called isPalindrome
+ * that takes a string as a parameter
+ * and returns true if the string is
+ * a palindrome (reads the same forwards
+ * and backwards), otherwise false.***/
+
+// approach 1
+
+const isPalindrome = (word) => {
+    //convert it to lower case first
+    let wordLower = word.toLowerCase();
+    let wordArray = [...wordLower];// make it an array
+    let wordArrayReversed = wordArray.reverse();
+    let reversedWord = wordArrayReversed.join("");
+    if (reversedWord == wordLower) {
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+// approach 2
+
+const isPalindrome = (word) => {
+    let length = word.length;
+    let halfWord = Math.floor(length/2);//get the middle of the word
+    /* loop through the word and compare
+     if each letter starting from the start is equal to each letter 
+     starting from the end */
+     for (let i = 0; i < halfWord; i++) {
+        return word.toLowerCase()[i] == word.toLowerCase()[word.length-1-i] ? true:false;
+     }
+}
+
+// console.log(isPalindrome("noon"));
+
+/**8.Develop a function named
+ * findMax that takes an array of
+ * numbers as a parameter and returns
+ * the largest number in the array.**/
+
+const findMax = (arrNums) => {
+    let maxNum = arrNums[0];
+    for (let i = 0; i < arrNums.length; i++) {
+        let arrNum = arrNums[i];
+        if (arrNum > maxNum) {
+            maxNum = arrNum;
+        }
+    }
+    return maxNum;
+}
+
+console.log(findMax([1,4,100]))
+
+/**9.Define a function called calculateBMI
+ that takes two parameters weight (in kilograms)
+ and height (in meters) and returns
+ the BMI (Body Mass Index) calculated
+ using the formula: BMI = weight / (height * height)**/
+
+
+ const calculateBMI = (weight,height) => {
+    let heightSquare = height ** 2;
+    return (weight/heightSquare).toFixed(2);
+ }
+ console.log(calculateBMI(90,2))
+
+/***10.Create a function named capitalizeWords
+ * that takes a sentence as a parameter
+ * and returns the sentence with the
+ * first letter of each word capitalized.***/
+
+const capitalizeWords = (words) => {
+    let normalWordsArray = words.toLowerCase().split(" ");
+    let capitaLizedWordsArray = [];
+    
+    for (let i = 0; i < normalWordsArray.length; i++) {
+        let result = normalWordsArray[i].charAt(0).toUpperCase() + normalWordsArray[i].slice(1);
+        capitaLizedWordsArray.push(result);
+    }
+    let capitalizedWords = capitaLizedWordsArray.join(" ");
+    return capitalizedWords;
+}
+
+console.log(capitalizeWords("karibu kenya"));
+
+// NOTE:These questions cover various aspects of JavaScript functions including basic function definition, parameter handling, return values, and more advanced tasks like   
+//      finding max values in arrays or calculating BMI. 
+
+
+
+
+
+        </code>
+    </pre>
+
+</div>
+</body>
+
+</html>

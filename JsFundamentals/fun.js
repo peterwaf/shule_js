@@ -1,41 +1,161 @@
-// Varaibles 
-// 1.What is the output of the following code in the console when the operands are added using arithmetic operator?
-// let x = 5;
-// let y = 10;
-// let z = 15;
 
-// 2.Create a variable called carName, assign the value Volvo to it.
+/**1.Define a function called addition that takes two
+parameters a and b and returns their sum.**/
 
-// 3.Create a variable called z, assign x + y to it, and display the result in an   
-//   console Tab.
+// const addition = (a,b) => {return a + b;}
+// console.log(addition (1,2));
 
-// Operators:
-// 4. Multiply 10 with 5, and console the result
+/**2.Create a function named greet 
+that takes a parameter name and returns
+a greeting message including the name**/
 
-// 5. Alert the remainder when 15 is divided by 9.
+// const greet = (nameString) => {
+//     return `Hello ${nameString}`;
+// }
 
-// Functions:
+// console.log(greet("John"))
 
-// 6. Create a function called "myFunction" and give a block of code so that when it    
-//    is called it executes an alert with the value assigned in your code.
+/**3.Write a function called isEven that takes a number as a parameter
+ * and returns true if the number is
+ * even, otherwise false.**/
 
-// 7.Make a function that returns "Hello" and display the value in the console tab.
+// const isEven = (num) => {
+//     if (num%2 === 0) {
+//         return true;
+//     }
+//     return false;
+// }
+
+// console.log(isEven(9))
+
+/**4.Develop a function named calculateArea
+ * that calculates the area of a rectangle given
+ * its width and height as parameters, and returns
+ * the result.**/
+
+// const calculateArea = (width,height) => {
+//     return width * height; //A = length * width
+// }
+
+// console.log(calculateArea(2,3))
+
+/**5.Define a function called power that takes
+ * two parameters base and exponent,
+ *  and returns the result of
+ * raising base to the power of exponent.**/
+
+// const power = (base,exponent)=>{
+//     return base ** exponent;
+// }
+
+// console.log(power(2,3))
+
+/**6.Create a function named reverseString that
+ * takes a string as a parameter and
+ * returns the reverse of that string.**/
+
+// const reverseString = (string)=>{
+//     let stringLetters = string.split("");
+//     let reversedString = [];
+//     for (let i = string.length -1; i >= 0; i--) {
+//         reversedString.push(string[i]);
+//     }
+//     return reversedString.join("");
+// }
+
+// console.log(reverseString("Mercedez"));
+
+
+/***7.Write a function called isPalindrome
+ * that takes a string as a parameter
+ * and returns true if the string is
+ * a palindrome (reads the same forwards
+ * and backwards), otherwise false.***/
+
+// approach 1
+
+// const isPalindrome = (word) => {
+//     //convert it to lower case first
+//     let wordLower = word.toLowerCase();
+//     let wordArray = [...wordLower];// make it an array
+//     let wordArrayReversed = wordArray.reverse();
+//     let reversedWord = wordArrayReversed.join("");
+//     if (reversedWord == wordLower) {
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+// approach 2
+
+// const isPalindrome = (word) => {
+//     let length = word.length;
+//     let halfWord = Math.floor(length/2);//get the middle of the word
+//     /* loop through the word and compare
+//      if each letter starting from the start is equal to each letter 
+//      starting from the end */
+//      for (let i = 0; i < halfWord; i++) {
+//         return word.toLowerCase()[i] == word.toLowerCase()[word.length-1-i] ? true:false;
+//      }
+// }
+
+// console.log(isPalindrome("noon"));
+
+/**8.Develop a function named
+ * findMax that takes an array of
+ * numbers as a parameter and returns
+ * the largest number in the array.**/
+
+// const findMax = (arrNums) => {
+//     let maxNum = arrNums[0];
+//     for (let i = 0; i < arrNums.length; i++) {
+//         let arrNum = arrNums[i];
+//         if (arrNum > maxNum) {
+//             maxNum = arrNum;
+//         }
+//     }
+//     return maxNum;
+// }
+
+// console.log(findMax([1,4,100]))
+
+/**9.Define a function called calculateBMI
+ that takes two parameters weight (in kilograms)
+ and height (in meters) and returns
+ the BMI (Body Mass Index) calculated
+ using the formula: BMI = weight / (height * height)**/
+
+
+//  const calculateBMI = (weight,height) => {
+//     let heightSquare = height ** 2;
+//     return (weight/heightSquare).toFixed(2);
+//  }
+//  console.log(calculateBMI(90,2))
+
+/***10.Create a function named capitalizeWords
+ * that takes a sentence as a parameter
+ * and returns the sentence with the
+ * first letter of each word capitalized.***/
+
+// const capitalizeWords = (words) => {
+//     let normalWordsArray = words.toLowerCase().split(" ");
+//     let capitaLizedWordsArray = [];
+    
+//     for (let i = 0; i < normalWordsArray.length; i++) {
+//         let result = normalWordsArray[i].charAt(0).toUpperCase() + normalWordsArray[i].slice(1);
+//         capitaLizedWordsArray.push(result);
+//     }
+//     let capitalizedWords = capitaLizedWordsArray.join(" ");
+//     return capitalizedWords;
+// }
+
+// console.log(capitalizeWords("karibu kenya"));
+
+// NOTE:These questions cover various aspects of JavaScript functions including basic function definition, parameter handling, return values, and more advanced tasks like   
+//      finding max values in arrays or calculating BMI. 
 
 
 
-// Arrays: 
-// 8. Show your result in the console of the browser.
-//  a) Create an array of fruits and:
-//     i) Use the correct array method to remove the last item in the array.
-       
-//    ii) Use the correct Array method to add a fruit at the begining of the fruits 
-//        array
-
-// Loops:
-// 9. Display your outputs in the console:
-//    a) Create a loop that runs from 0 to 9 using the for loop.
-//    b) Create a loop that runs through each item in the below array:
-//       const fruits = ["Apple", "Banana", "Orange"];
-
-// Data Types:
 
