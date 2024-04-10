@@ -1,0 +1,9 @@
+{
+    "Name":"World",
+    "countries":[
+        {"name":"Kenya",
+         "population":50000000},
+         {"name":"Nigeria",
+         "population":200000000}
+    ]
+}

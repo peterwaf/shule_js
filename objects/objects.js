@@ -132,3 +132,41 @@ object and display them in the console.*/
 // });
 
 // console.log(Object.values(car))
+
+//PROTOTYPE INHERITANCE
+/*prototype property is in every object or function
+and can be used in objects to set new properties i.e key,value pairs*/
+
+// function Car(name, make, year) {
+//   this.name = name;
+//   this.make = make;
+//   this.year = year;
+// } // constructor function
+
+// const car1 = new Car("Honda", "Fit", 2016);
+// const car2 = new Car("Toyota", "Auris", 2014);
+// Car.prototype.transmission = "Auto";//add transmission to Car prototype
+// //now we can set a new property as transmission
+// car1.transmission = "Manual";
+// car2.transmission = "Auto";
+// console.log(car1); //Car {name: 'Honda', make: 'Fit', year: 2016, transmission: 'Manual'}
+// console.log(car2); //Car {name: 'Toyota', make: 'Auris', year: 2014, transmission: 'Auto'}
+
+//object destructuring
+
+// const book = {
+//   name: "Good morning holy spirit",
+//   author: "Benny Hinn"
+// }
+
+// // //method1 - assign property to your proposed variable
+
+// // let {name:firstName,authorName:author} = book;
+// // console.log(firstName)
+
+// // //method 2 assign the variable with the same name as keys of the object
+// // const {name,author} = book;
+// // console.log(author)
+
+
+
