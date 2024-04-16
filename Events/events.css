@@ -1,0 +1,16 @@
+.border-div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+#people td,
+#people th {
+    border: 1px solid #000;
+}
+#para-div{
+    width:200px;
+    height: 100px;
+    border:1px solid #000;
+    padding: 5px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./events.css">
+    <title>Events</title>
+</head>
+
+<body>
+    <a href="../index.html">Home</a>
+    <h1>JS basics and DOM</h1>
+    <p>
+        1.Change the background color of a button when it is clicked.
+    </p>
+    <button id="btn-1">Click</button>
+    <p>2.Create a text input and a button.
+        When the button is clicked, display
+        the text input value in an alert box.</p>
+    <input type="text" id="input-text-data" value="" placeholder="Type something..">
+    <button id="input-text">Alert Typed Text</button>
+    <p>3.Create a list of items using the <strong>ul</strong> and <strong>li</strong> elements.
+        Add a button next to each item that,
+        when clicked, removes the item from the list.</p>
+    <ul id="list-items">
+        <li>Item 1 <button onclick="removeItem(this);">delete</button></li>
+        <li>Item 2 <button onclick="removeItem(this);">delete</button></li>
+        <li>Item 3 <button onclick="removeItem(this);">delete</button></li>
+        <li>Item 4 <button onclick="removeItem(this);">delete</button></li>
+    </ul>
+
+    <p>4.Create a div with a border and a button.
+        When the button is clicked,
+        toggle the visibility of the div.</p>
+
+    <div class="border-div">
+
+    </div>
+    <br>
+    <button id="border-div-button">Toggle Div</button>
+
+    <p>5.Create a table with multiple rows and columns.
+        When a cell is clicked, change its background color.</p>
+
+    <table id="people" border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tom</td>
+                <td>Cruise</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Elon</td>
+                <td>Musk</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Adhis</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Kamau</td>
+                <td>Muigai</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td>Pricia</td>
+                <td>Njoki</td>
+                <td>31</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>6.Create a button that, when clicked, creates a new paragraph
+        element with text inside and appends it
+        to the end of an existing div.</p>
+
+    <div id="para-div">
+        <p>creates a new paragraph at the end of the div</p>
+        <button id="para-div-button">Create Paragraph </button>
+    </div>
+    <p> 7.Create a form with two text inputs and a button.
+        When the button is clicked, concatenate the values of
+        the two text inputs and display the result in an alert box.</p>
+
+        <form>
+            <input type="text" id="text1" placeholder="Text 1">
+            <input type="text" id="text2" placeholder="Text 2">
+            <button id="join-txt"> Join Texts</button>
+        </form>
+
+    <p>8.Create a select dropdown with multiple options.
+        When an option is selected, display its value in
+        an alert box.</p>
+
+    <p> 9.Create an image element and a button. When the button is clicked, change the
+        image src to a different image.</p>
+
+        <img src="./images/pexels-james-wheeler-414612.jpg" id="img-id" alt="" width="600" height="400">
+        <br />
+        <button id="img-btn">ChangeImage</button>
+
+    <p>
+        10.Create a button that, when clicked, creates a new div element with a border and appends it to the end of an
+        existing div
+
+    </p>
+
+    <script src="./events.js"></script>
+</body>
+
+</html>
