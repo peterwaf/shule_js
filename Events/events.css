@@ -1,3 +1,17 @@
+body {
+    padding: 5%;
+}
+#top-nav{
+    background-color: yellow;
+    padding: 5px;
+}
+#top-button{
+    position: fixed;
+    right: 0px;
+    top:50%;
+    font-weight: bold;
+    font-size: large;
+}
 .border-div {
     width: 100px;
     height: 100px;
@@ -8,9 +22,27 @@
 #people th {
     border: 1px solid #000;
 }
-#para-div{
-    width:200px;
+
+#para-div {
+    width: 200px;
     height: 100px;
-    border:1px solid #000;
+    border: 1px solid #000;
     padding: 5px;
+}
+
+#below-div {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.created-below-div {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    margin-top:3px;
+    margin-bottom:3px;
 }
